@@ -11,26 +11,26 @@
         </div>
         <form>
             <label for="date">Date (day/month/year)</label>
-            <input id="date">
+            <input id="date" value="15/2/2024">
             <label for="input_time">Time (hh:mm)</label>
-            <input id="input_time">
-<!--            <label for="city">Of this city</label>-->
-<!--            <input id="city">-->
+            <input id="input_time" value="14:25">
+            <label for="from_city">Of this city</label>
+            <input id="from_city" value="Winnipeg">
         </form>
         <div>
             ----------------------
         </div>
         <form>
-            <label for="interest_city">City I want the time for</label>
-            <input id="interest_city">
+            <label for="to_city">City I want the time for</label>
+            <input id="to_city" value="Tokyo">
         </form>
         <div>
             ----------------------
         </div>
-        <button type="button" onclick="displayTime()">GO</button>
+        <button id="btn" type="button">GO</button>
         <div id="output_time">RESULT WILL SHOW HERE</div>
     </div>
-
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
+    <!-- <script type="module" src="/node_modules/dayjs/dayjs.min.js"></script> -->
 </body>
 </html>
