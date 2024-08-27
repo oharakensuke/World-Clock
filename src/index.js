@@ -38,10 +38,8 @@ function getDateStr(input) {
         { year: input.year, month: input.month, day: input.day, hour: input.hour, minutes: input.min },
         { zone: inputTz }
     );
-    console.log(dt.toLocaleString(DateTime.DATETIME_MED));
 
     const outputTz = getTimeZone(input.outputCity);
-    console.log(outputTz);
     const newDt = dt.setZone(outputTz);
     return newDt.toLocaleString(DateTime.DATETIME_MED);
 }
