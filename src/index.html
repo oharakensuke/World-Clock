@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>World Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Time Zone Converter</h1>
+        <div id="content_container">
+            <div class="inner_container" id="inputs">
+                <h2>Input</h2>
+                <form id="inputs">
+                    <div>
+                        <label for="input_city">Time Zone</label>
+                        <input id="input_city" value="Winnipeg">
+                    </div>
+                    <div>
+                        <label for="input_time">Time (hh:mm)</label>
+                        <input id="input_time" value="16:26">
+                    </div>
+                    <div>
+                        <label for="date">Date (day/month/year)</label>
+                        <input id="date" value="24/3/2024">
+                    </div>
+                </form>
+            </div>
+            <div id="btn_container">
+                <button id="go_btn" type="button">GO</button>
+            </div>
+            <div class="inner_container" id="results">
+                <h2>Results</h2>
+                <form id="results">
+                    <div>
+                        <label for="output_city">City I want the time for</label>
+                        <input id="output_city" value="Tokyo">
+                    </div>
+                    <div id="output_time">RESULT WILL SHOW HERE</div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../lib/luxon.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
